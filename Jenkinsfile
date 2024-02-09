@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'echo started'
                 sh 'docker build -t flask-app .'
             }
         }
