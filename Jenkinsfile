@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Push to Registry') {
             steps {
-                sh 'docker push https://hub.docker.com/u/nehakaswala/flask-app'
+                sh 'docker push nehakaswala/flask-app:latest'
             }
         }
     }
